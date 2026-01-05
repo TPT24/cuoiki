@@ -13,7 +13,7 @@ $rs = $cn->query($sql);
 <a href="giangvien_add.php">Thêm GV</a>
 <a href="giangvien_search.php">Tìm GV</a>
 <a href="sinhvien.php">Sinh viên</a>
-<a href="login.html">Login</a>
+<a href="login.php">Login</a>
 <h3>Danh sách Sinh viên</h3>
 <table>
     <tr>
