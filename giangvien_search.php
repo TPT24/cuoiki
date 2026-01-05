@@ -1,12 +1,8 @@
 <?php
 include "db.php";
 $key = $_GET["k"] ?? "";
-$sql = "SELECT * FROM Giangvien WHERE Hoten LIKE ? ORDER BY Magv DESC";
-$stm = $cn->prepare($sql);
-$like = "%$key%";
-$stm->bind_param("s", $like);
-$stm->execute();
-$rs = $stm->get_result();
+$sql = "SELECT * FROM giangvien WHERE Hoten LIKE '%$key%'";
+$rs = $cn->query($sql);
 ?>
 <!doctype html>
 <meta charset="utf-8">
